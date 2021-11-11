@@ -33,6 +33,11 @@ function clicked(event){
         event.target.classList.add('clicked');
 
 
+        // if(event.target.previousElementSibling.previousElementSibling.previousElementSibling){
+        //     console.log("works");
+        // }
+
+        if(event.target.nextElementSibling){
         if(event.target.nextElementSibling.nextElementSibling){
             if(event.target.previousElementSibling && event.target.nextElementSibling && event.target.nextElementSibling.nextElementSibling){
                 console.log('in the middle left')
@@ -86,10 +91,7 @@ function clicked(event){
                 }
             }
         }
-
-        
-        else if(event.target.previousElementSibling.previousElementSibling || event.target.previousElementSibling.previousElementSibling.previousElementSibling ){
-            console.log("working")
+        else{
             if(event.target.previousElementSibling.previousElementSibling && event.target.previousElementSibling && event.target.nextElementSibling){
                 console.log('in the middle right')
                 let behindBedindBtnStatus = event.target.previousElementSibling.previousElementSibling.getAttribute('data-status');
@@ -110,15 +112,44 @@ function clicked(event){
                     if(event.target.previousElementSibling.previousElementSibling.classList[2]){
                         event.target.previousElementSibling.previousElementSibling.classList.toggle('clicked')
                     }
-
                 }
-                event.target.previousElementSibling.previousElementSibling.setAttribute('data-status', "unclicked");
+            }
+        }
+    }
 
-                event.target.previousElementSibling.setAttribute('data-status', "unclicked");
-                // event.target.classList.previousElementSibling.remove('clicked');
+        
+        else if(event.target.previousElementSibling.previousElementSibling.previousElementSibling){
+            console.log("working")
+            if(event.target.previousElementSibling.previousElementSibling && event.target.previousElementSibling && event.target.nextElementSibling){
+                // console.log('in the middle right')
+                // let behindBedindBtnStatus = event.target.previousElementSibling.previousElementSibling.getAttribute('data-status');
+                // let behindBtnStatus = event.target.previousElementSibling.getAttribute('data-status');
+                // let inFront = event.target.nextElementSibling.getAttribute('data-status');
 
-                event.target.nextElementSibling.setAttribute('data-status', "unclicked");
-                // event.target.classList.nextElementSibling.remove('clicked');
+                // if(behindBedindBtnStatus == "clicked" || behindBtnStatus == "clicked" || inFront == 'clicked'){
+                //     // console.log('you did it')
+                //     // event.target.nextElementSibling.classList.add('hey')
+                //     if(event.target.nextElementSibling.classList[2]){
+                //         console.log('does exist');
+                //         console.log(event.target.nextElementSibling.classList)
+                //         event.target.nextElementSibling.classList.toggle('clicked')
+                //     }
+                //     if(event.target.previousElementSibling.classList[2]){
+                //         event.target.previousElementSibling.classList.toggle('clicked')
+                //     }
+                //     if(event.target.previousElementSibling.previousElementSibling.classList[2]){
+                //         event.target.previousElementSibling.previousElementSibling.classList.toggle('clicked')
+                //     }
+
+                // }
+                // event.target.previousElementSibling.previousElementSibling.setAttribute('data-status', "unclicked");
+
+                // event.target.previousElementSibling.setAttribute('data-status', "unclicked");
+                // // event.target.classList.previousElementSibling.remove('clicked');
+
+                // event.target.nextElementSibling.setAttribute('data-status', "unclicked");
+                // // event.target.classList.nextElementSibling.remove('clicked');
+                console.log('error')
 
             }else if(event.target.previousElementSibling.previousElementSibling.previousElementSibling){
                 console.log('three behind')
@@ -141,7 +172,9 @@ function clicked(event){
                 }
             }
         }
-        
+        else{
+            console.log('broken')
+        }
     }
 
     else{
