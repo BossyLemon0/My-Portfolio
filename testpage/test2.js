@@ -4,7 +4,7 @@
 var btn_strt = document.querySelector(".entr");
 var btn_exit = document.querySelector(".exit");
 var swipe_page = document.querySelector(".swipe_page");
-var abtMeBtn = document.querySelector(".three");
+var abtMeBtn = document.querySelector(".four");
 
 function home(){
     swipe_page.classList.remove('swipe');
