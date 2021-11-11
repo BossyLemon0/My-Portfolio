@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.swipe_page{
+position: fixed;
+width: 100vw;
+height: 900px;
+background-color: #1f0101;
+
+top: 0%;
+left: 110%;
+transition: .7s ease;
+/* for bg black transition */
+transition: 2s ease;
+transition-property: left;
+}
+
+.swipe{
+    left: 0%;
+    
+}
+
+body{
+    margin:27px 0 0 0;
+    background-color: rgba(16, 15, 15, 0.96);
+    background-color: black;
+    height: 850px;
+    height: 200vh;
+}
+
+nav{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: orange;
+    /* --------------------------------------------------------------------------------------------- */
+    /* previous white border */
+    /* border: rgba(95, 84, 84, 0.179) 1px solid; */
+    /* --------------------------------------------------------------------------------------------- */
+    /* light background */
+    background-color: rgba(255,255,255,0.1);
+    /* -------------------------------------------------------------------------------------------- */
+    /* dark background */
+    /* background-color: rgba(95, 84, 84, 0.056); */
+    /* -------------------------------------------------------------------------------------------- */
+    box-shadow:inset 0px -6px 5px 0px rgba(0, 0, 0, .5) ,20px 20px 50px rgba(0, 0, 0, .5) ;
+    height: 70px;
+    position:fixed;
+    
+}
+
+.hey{
+    width: 90px;
+    height: 200px;
+    color: orange;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    color: orange ;
+    padding: 0 0 0 70px;
+   
+}
+
+.bi-moon-stars-fill{
+    position: relative;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    opacity: 0;
+    
+}
+
+.bi-moon-stars-fill:hover{
+    animation:glow 1s forwards;
+}
+
+.bi-moon-stars{
+    position: absolute;
+}
+
+.info{
+    padding: 0 70px 0 0;
+    display: flex;
+    /* justify-content: space-around; */
+    font-family: 'Montserrat', sans-serif;
+    /* black text tone */
+    color: rgb(17, 16, 16);
+    text-shadow: 0px .1px .02px white;
+    /* grey text tone */
+    color: #666;
+    
+    text-shadow: 0px 4px 1px rgba(0,0,0,.5);
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1px;
+    width: 90px;
+    height: 70px;
+    cursor:pointer;
+    user-select: none;
+}
+
+.one{
+    border-right: rgb(14, 13, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+
+.two{
+    border-right: rgb(14, 13, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+
+.three{
+    border-right: rgb(31, 29, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+
+.clicked{
+    box-shadow:inset 0px 0px 2px 2px rgba(0, 0, 0, 0.604);
+    /* border-left: black solid; */
+    background-color: rgba(16, 15, 15, 0.96);
+    color: orange ;
+    text-shadow: 0 0 1em rgba(248, 100, 2, 20)
+}
+
+@keyframes glow {
+    to{
+        opacity: 1;
+    }
+}
