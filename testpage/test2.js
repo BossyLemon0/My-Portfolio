@@ -1,6 +1,7 @@
 // this test is for the test html when we add more buttons and is for button delegation. this test will have four buttons 
 // and I will make another one for five buttons.
-
+                                                                            // Swipe logic
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 var btn_strt = document.querySelector(".entr");
 var btn_exit = document.querySelector(".exit");
 var swipe_page = document.querySelector(".swipe_page");
@@ -17,7 +18,8 @@ function swipe(){
 btn_exit.addEventListener("click", home);
 abtMeBtn.addEventListener("click", swipe);
 
-
+                                                                            // button delegation
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 var btn = document.querySelector('.info');
 
@@ -183,6 +185,33 @@ function clicked(event){
     }
 }
 
-console.log(btn)
-
 btn.addEventListener('click', clicked)
+                                                                            // scroll home page logic
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+// var sections = document.querySelectorAll('.info-sect');
+// var section = document.querySelector(".home");
+// var main = document.querySelectorAll('main');
+// var sections = document.querySelector('.pagescrolls');
+var newsects = document.querySelectorAll('div .info-sects');
+console.log(newsects);
+
+
+const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: "-200px",
+}
+
+const observer = new IntersectionObserver(function(items, observer){
+    items.forEach(function each(item){
+        console.log(item.target);
+
+    })
+}, options);
+
+newsects.forEach(function each(section){
+    observer.observe(section);
+})
+
+// observer.observe(section);

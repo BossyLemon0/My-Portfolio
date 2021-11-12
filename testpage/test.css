@@ -22,7 +22,7 @@ transition-property: left;
     left: 0%;
 }
 
-.hey{
+.info-sects{
     position: static;
     display: flex;
     justify-content: center;
@@ -119,7 +119,7 @@ nav{
     /* black text tone */
     /* color: rgb(17, 16, 16);
     text-shadow: 0px .1px .02px white; */
-    
+
     /* grey text tone */
     /* color: #666; */
     color: grey;
@@ -175,8 +175,8 @@ nav{
     right:200px;
     width: 10px;
     height: 200px;
-    
-    z-index: -1;
+    /* add logic to switch index to zero when the about me page swipe goes into effect */
+    z-index: 1;
 }
 
 .scroll-btn{
@@ -184,8 +184,10 @@ nav{
     width: 4px;
     background-color: grey;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .active{
-
+    background-color: orange;
+    box-shadow: 0 0 .4em .2em rgb(248, 100, 2);
 }
