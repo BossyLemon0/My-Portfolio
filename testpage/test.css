@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .swipe_page{
 position: fixed;
 width: 100vw;
@@ -195,3 +199,54 @@ nav{
     background-color: orange;
     box-shadow: 0 0 .4em .2em rgb(248, 100, 2);
 }
+
+.bi-instagram{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    
+}
+
+.bi-instagram2{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    opacity: 0;
+}
+
+.bi-linkedin{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    z-index: 1;
+}
+
+.bi-linkedin2{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    opacity: 0;
+    z-index: 2;
+}
+.bi-github{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    /* z-index: 1; */
+}
+
+.bi-github2{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    opacity: 0;
+    /* z-index: ; */
+}
+
+.bi-instagram2:hover, .bi-linkedin2:hover, .bi-github2:hover{
+    cursor: pointer;
+    animation: glow 1s forwards;
+}
+
+.footer div{
+    padding-bottom: 39px;
+}
+
+/* .bi-linkedin2:hover{
+    cursor: pointer;
+    animation: glow 1s forwards;
+} */
