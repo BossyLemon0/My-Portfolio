@@ -227,6 +227,7 @@ nav{
 .bi-github{
     position:absolute;
     filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+
     /* z-index: 1; */
 }
 
@@ -237,7 +238,21 @@ nav{
     /* z-index: ; */
 }
 
-.bi-instagram2:hover, .bi-linkedin2:hover, .bi-github2:hover{
+.bi-discord{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+
+    /* z-index: 1; */
+}
+
+.bi-discord2{
+    position:absolute;
+    filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
+    opacity: 0;
+    /* z-index: ; */
+}
+
+.bi-instagram2:hover, .bi-linkedin2:hover, .bi-github2:hover, .bi-discord2:hover{
     cursor: pointer;
     animation: glow 1s forwards;
 }

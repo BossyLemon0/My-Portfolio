@@ -1,5 +1,11 @@
 // this test is for the test html when we add more buttons and is for button delegation. this test will have four buttons 
 // and I will make another one for five buttons.
+
+
+// var navHome;
+// var navSkills; 
+// var navProjects; 
+
                                                                             // Swipe logic
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 var btn_strt = document.querySelector(".entr");
@@ -222,6 +228,7 @@ const observer = new IntersectionObserver(function(items, observer){
             scrollBtns[0].classList.toggle('active');
             scrollBtns[1].classList.remove('active');
             scrollBtns[2].classList.remove('active');
+            
         }
 
         if(item.target.classList[1] == 'skills'){
@@ -248,3 +255,42 @@ newsects.forEach(function each(section){
 })
 
 // observer.observe(section);
+
+                                                                            // scroll home page nav buttons logic
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+var navHome = document.querySelector('.one');
+var navSkills = document.querySelector('.two');
+var navProjects = document.querySelector('.three');
+
+function getattribute(event){
+console.log(event.target.getAttribute('data-status'))
+
+if(event.target.getAttribute('data-status') == "unclicked"){
+    console.log(event.target.classList[1])
+    if(event.target.classList[1] == "one"){
+        console.log('working')
+    }
+    if(event.target.classList[1] == "two"){
+        console.log('working')
+    }
+    if(event.target.classList[1] == "three"){
+        console.log('working')
+    }
+
+}
+}
+
+// if(navHome == "clicked"){
+//     console.log('working')
+// }
+// if(navHome == "clicked"){
+//     console.log('working')
+// }
+// if(navHome == "clicked"){
+//     console.log('working')
+// }
+
+navHome.addEventListener("click", getattribute)
+navSkills.addEventListener("click", getattribute)
+navProjects.addEventListener("click", getattribute)
