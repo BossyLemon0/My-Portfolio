@@ -193,20 +193,47 @@ btn.addEventListener('click', clicked)
 // var section = document.querySelector(".home");
 // var main = document.querySelectorAll('main');
 // var sections = document.querySelector('.pagescrolls');
+var scrollBtns = document.querySelectorAll('div .scroll-btn')
 var newsects = document.querySelectorAll('div .info-sects');
 console.log(newsects);
+console.log(scrollBtns);
 
 
 const options = {
     root: null,
     threshold: 0,
-    rootMargin: "-200px",
+    rootMargin: "-150px",
 }
 
 const observer = new IntersectionObserver(function(items, observer){
-    items.forEach(function each(item){
-        console.log(item.target);
+    items.forEach(function each(item, index){
+        if(!item.isIntersecting){
+            return;
+        }
+        console.log(item.target.classList[1]);
+        if(item.target.classList[1] == 'home'){
+            console.log('home')
+            scrollBtns[0].classList.toggle('active');
+            scrollBtns[1].classList.remove('active');
+            scrollBtns[2].classList.remove('active');
+        }
 
+        if(item.target.classList[1] == 'skills'){
+            console.log('skills')
+            scrollBtns[1].classList.toggle('active');
+            scrollBtns[0].classList.remove('active');
+            scrollBtns[2].classList.remove('active');
+        }
+
+        if(item.target.classList[1] == 'projects'){
+            console.log('projects')
+            scrollBtns[2].classList.toggle('active');
+            scrollBtns[1].classList.remove('active');
+            scrollBtns[0].classList.remove('active');
+
+        }
+
+        
     })
 }, options);
 
