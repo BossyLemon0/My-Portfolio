@@ -179,6 +179,10 @@ nav{
     z-index: 1;
 }
 
+.scrollerbehind{
+    z-index: -1;
+}
+
 .scroll-btn{
     height: 12px;
     width: 4px;

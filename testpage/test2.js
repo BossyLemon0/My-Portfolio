@@ -6,19 +6,25 @@ var btn_strt = document.querySelector(".entr");
 var btn_exit = document.querySelector(".exit");
 var swipe_page = document.querySelector(".swipe_page");
 var abtMeBtn = document.querySelector(".four");
+var scrollPathvisibility = document.querySelector(".scroll-path");
 
 function home(){
     swipe_page.classList.remove('swipe');
+    setTimeout(()=>{
+        scrollPathvisibility.classList.remove('scrollerbehind');
+    },900)
+
 }
 
 function swipe(){
     swipe_page.classList.add('swipe');
+    scrollPathvisibility.classList.add('scrollerbehind');
 }
 
 btn_exit.addEventListener("click", home);
 abtMeBtn.addEventListener("click", swipe);
 
-                                                                            // button delegation
+                                                                            // nav bar button delegation
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 var btn = document.querySelector('.info');
