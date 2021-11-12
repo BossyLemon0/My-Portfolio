@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-}
 
 .swipe_page{
 position: fixed;
@@ -23,7 +20,32 @@ transition-property: left;
 
 .swipe{
     left: 0%;
-    
+}
+
+.hey{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    height: 100vh;
+}
+
+.main{
+    color: orange;
+} 
+
+.footer{
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 850px;
+    height: 80px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
 
 body{
@@ -56,11 +78,11 @@ nav{
     
 }
 
-.hey{
+/* .hey{
     width: 90px;
     height: 200px;
     color: orange;
-}
+} */
 
 .nav{
     display: flex;
@@ -95,11 +117,12 @@ nav{
     /* justify-content: space-around; */
     font-family: 'Montserrat', sans-serif;
     /* black text tone */
-    color: rgb(17, 16, 16);
-    text-shadow: 0px .1px .02px white;
-    /* grey text tone */
-    color: #666;
+    /* color: rgb(17, 16, 16);
+    text-shadow: 0px .1px .02px white; */
     
+    /* grey text tone */
+    /* color: #666; */
+    color: grey;
     text-shadow: 0px 4px 1px rgba(0,0,0,.5);
     
 }
@@ -141,4 +164,28 @@ nav{
     to{
         opacity: 1;
     }
+}
+
+.scroll-path{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top:250px;
+    right:200px;
+    width: 10px;
+    height: 200px;
+    
+    z-index: -1;
+}
+
+.scroll-btn{
+    height: 12px;
+    width: 4px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.active{
+
 }
