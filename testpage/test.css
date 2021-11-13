@@ -33,6 +33,7 @@ transition-property: left;
     align-items: center;
     height: 850px;
     height: 100vh;
+    /* width: 100px; */
 }
 
 .main{
@@ -59,7 +60,7 @@ body{
     height: 850px;
     height: 200vh;
 }
-
+/* nav bar */
 nav{
     width: 95%;
     display: flex;
@@ -169,13 +170,45 @@ nav{
         opacity: 1;
     }
 }
+/* main slides */
+.first{
+    letter-spacing: 13px;
+    font-family: arial;
+    font-size: 100px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004) ;
+    line-height: .7em;
+    
+}
 
+.off{
+    color:rgba(118, 105, 105, 0.515);
+}
+
+.isOn{
+    animation: glowMain 3s forwards;
+}
+
+.keepOn{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(248, 100, 2),
+    0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 80px rgb(248, 100, 2),
+      0 0 100px rgb(248, 100, 2)
+     ;
+}
+
+@keyframes glowMain {
+    
+}
+
+/* scoll bar */
 .scroll-path{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    top:250px;
+    top:330px;
     right:200px;
     width: 10px;
     height: 200px;

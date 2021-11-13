@@ -258,10 +258,15 @@ newsects.forEach(function each(section){
 
                                                                             // scroll home page nav buttons logic
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
+//nav btns
 var navHome = document.querySelector('.one');
 var navSkills = document.querySelector('.two');
 var navProjects = document.querySelector('.three');
+//the content areas
+var homeWindow = document.getElementById('home');
+var skillWindow = document.getElementById('skills');
+var porjectsWindow = document.getElementById('projects');
+console.log(homeWindow)
 
 function getattribute(event){
 console.log(event.target.getAttribute('data-status'))
@@ -270,12 +275,16 @@ if(event.target.getAttribute('data-status') == "unclicked"){
     console.log(event.target.classList[1])
     if(event.target.classList[1] == "one"){
         console.log('working')
+        homeWindow.scrollIntoView();
+
     }
     if(event.target.classList[1] == "two"){
         console.log('working')
+        skillWindow.scrollIntoView();
     }
     if(event.target.classList[1] == "three"){
         console.log('working')
+        porjectsWindow.scrollIntoView();
     }
 
 }
