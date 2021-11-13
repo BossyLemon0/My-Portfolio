@@ -171,6 +171,7 @@ nav{
     }
 }
 /* main slides */
+/* first slide */
 .first{
     letter-spacing: 13px;
     font-family: arial;
@@ -235,6 +236,42 @@ nav{
 
 }
 
+/* second slide */
+.second{
+    width: 400px;
+    height: 450px;
+    border:honeydew solid 2px;
+}
+/* third slide */
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'one one'
+    'two three';
+    width: 500px;
+    height: 650px;
+}
+.projects{
+    align-items: normal;
+    margin-top: 150px;
+}
+.third{
+
+    border:honeydew solid 2px;
+}
+.p1{
+   
+    grid-area: one;
+
+}
+.p2 {
+    grid-area: two;
+}
+.p3 {
+    grid-area: three;
+} 
+  
 /* scoll bar */
 .scroll-path{
     display: flex;
