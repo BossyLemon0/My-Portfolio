@@ -198,7 +198,7 @@ function clicked(event){
 }
 
 btn.addEventListener('click', clicked)
-                                                                            // scroll home page logic
+                                                                            // scroll home page logic (includes main page animations)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 // var sections = document.querySelectorAll('.info-sect');
@@ -209,6 +209,7 @@ var scrollBtns = document.querySelectorAll('div .scroll-btn')
 var newsects = document.querySelectorAll('div .info-sects');
 console.log(newsects);
 console.log(scrollBtns);
+var homeIntroSlide = document.querySelector('.first')
 
 
 const options = {
@@ -225,24 +226,36 @@ const observer = new IntersectionObserver(function(items, observer){
         console.log(item.target.classList[1]);
         if(item.target.classList[1] == 'home'){
             console.log('home')
+            //btns
             scrollBtns[0].classList.toggle('active');
             scrollBtns[1].classList.remove('active');
             scrollBtns[2].classList.remove('active');
+            //pagelayout
+            homeIntroSlide.classList.add('isOn');
+            homeIntroSlide.classList.remove('isOff');
             
         }
 
         if(item.target.classList[1] == 'skills'){
             console.log('skills')
+            //btns
             scrollBtns[1].classList.toggle('active');
             scrollBtns[0].classList.remove('active');
             scrollBtns[2].classList.remove('active');
+            //pagelayout
+            homeIntroSlide.classList.add('isOff');
+            homeIntroSlide.classList.remove('isOn');
         }
 
         if(item.target.classList[1] == 'projects'){
             console.log('projects')
+            //btns
             scrollBtns[2].classList.toggle('active');
             scrollBtns[1].classList.remove('active');
             scrollBtns[0].classList.remove('active');
+            //pagelayout
+            // homeIntroSlide.classList.add('isOff');
+            // homeIntroSlide.classList.remove('isOn');
 
         }
 

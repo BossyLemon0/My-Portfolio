@@ -180,12 +180,12 @@ nav{
     
 }
 
-.off{
-    color:rgba(118, 105, 105, 0.515);
+.isOff{
+    animation: unGlowMain 2s linear forwards;
 }
 
 .isOn{
-    animation: glowMain 3s forwards;
+    animation: glowMain 2s linear forwards;
 }
 
 .keepOn{
@@ -198,8 +198,41 @@ nav{
      ;
 }
 
+.KeepOff{
+    color:rgba(118, 105, 105, 0.515);
+}
+
 @keyframes glowMain {
-    
+    0%{
+        color:rgba(118, 105, 105, 0.515);
+        text-shadow: none;
+    }
+    100%{
+        color:rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(248, 100, 2),
+        0 0 20px rgb(248, 100, 2),
+        0 0 40px rgb(248, 100, 2),
+         0 0 80px rgb(248, 100, 2),
+          0 0 100px rgb(248, 100, 2)
+         ;
+    }
+}
+
+@keyframes unGlowMain {
+    0%{
+        color:rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(248, 100, 2),
+        0 0 20px rgb(248, 100, 2),
+        0 0 40px rgb(248, 100, 2),
+         0 0 80px rgb(248, 100, 2),
+          0 0 100px rgb(248, 100, 2)
+         ;
+    }
+    100%{
+        color:rgba(118, 105, 105, 0.515);
+        text-shadow: none;
+    }
+
 }
 
 /* scoll bar */
@@ -234,6 +267,7 @@ nav{
 }
 
 .bi-instagram{
+    fill: honeydew;
     position:absolute;
     filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
     
@@ -246,6 +280,7 @@ nav{
 }
 
 .bi-linkedin{
+    fill: honeydew;
     position:absolute;
     filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
     z-index: 1;
@@ -258,6 +293,7 @@ nav{
     z-index: 2;
 }
 .bi-github{
+    fill:honeydew;
     position:absolute;
     filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
 
@@ -272,6 +308,7 @@ nav{
 }
 
 .bi-discord{
+    fill: honeydew;
     position:absolute;
     filter: drop-shadow(0 0 .4em rgb(248, 100, 2));
 
