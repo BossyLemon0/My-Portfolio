@@ -264,10 +264,11 @@ nav{
     column-gap: 15px;
 }
 .projects{
-    align-items: normal;
+    /* align-items: normal;
     justify-content: normal;
     padding-top: 150px;
-    padding-left: 420px;
+    padding-left: 420px; */
+    padding-top: 110px;
 }
 .third{
 
