@@ -278,7 +278,7 @@ var navProjects = document.querySelector('.three');
 //the content areas
 var homeWindow = document.getElementById('home');
 var skillWindow = document.getElementById('skills');
-var porjectsWindow = document.getElementById('projects');
+var projectsWindow = document.getElementById('projects');
 console.log(homeWindow)
 
 function getattribute(event){
@@ -297,7 +297,7 @@ if(event.target.getAttribute('data-status') == "unclicked"){
     }
     if(event.target.classList[1] == "three"){
         console.log('working')
-        porjectsWindow.scrollIntoView();
+        projectsWindow.scrollIntoView();
     }
 
 }
@@ -316,3 +316,30 @@ if(event.target.getAttribute('data-status') == "unclicked"){
 navHome.addEventListener("click", getattribute)
 navSkills.addEventListener("click", getattribute)
 navProjects.addEventListener("click", getattribute)
+
+                                                                            // logic to light up and animate the slides
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+var skillEl = document.querySelector('.second');
+var projectEl1 = document.querySelector('.p1');
+var projectEl2 = document.querySelector('.p2');
+var projectEl3 = document.querySelector('.p3');
+
+function bnaSkills(){
+    console.log('woah')
+}
+function bnaP1(){
+    console.log('woah')
+}
+function bnaP2(){
+    console.log('woah')
+}
+function bnaP3(){
+    console.log('woah')
+}
+
+skillEl.addEventListener('mouseenter',bnaSkills)
+projectEl1.addEventListener('mouseenter',bnaP1)
+projectEl2.addEventListener('mouseenter',bnaP2)
+projectEl3.addEventListener('mouseenter',bnaP3)
+

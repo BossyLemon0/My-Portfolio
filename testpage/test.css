@@ -13,6 +13,7 @@ position: fixed;
 width: 100vw;
 height: 900px;
 background-color: #1f0101;
+background-color: #04011f ;
 
 top: 0%;
 left: 110%;
@@ -162,7 +163,13 @@ nav{
     /* border-left: black solid; */
     background-color: rgba(16, 15, 15, 0.96);
     color: orange ;
-    text-shadow: 0 0 1em rgba(248, 100, 2, 20)
+    /* color: white; */
+    text-shadow: 0 0 1em rgba(248, 100, 2, 20),
+    0 0 10px rgb(248, 100, 2),
+        0 0 20px rgb(248, 100, 2),
+        0 0 40px rgb(248, 100, 2),
+         0 0 80px rgb(248, 100, 2),
+          0 0 100px rgb(248, 100, 2)
 }
 
 @keyframes glow {
@@ -237,10 +244,19 @@ nav{
 }
 
 /* second slide */
+.skills{
+    padding-top: 110px;
+}
 .second{
-    width: 400px;
+    width: 450px;
     height: 450px;
-    border:honeydew solid 2px;
+    border:honeydew solid 7px;
+    box-shadow:inset 0 0 10px rgb(248, 100, 2),
+    inset 0 0 20px rgb(248, 100, 2),
+    inset 0 0 40px rgb(248, 100, 2),
+    0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 50px rgb(248, 100, 2)
 }
 /* third slide */
 
@@ -249,29 +265,59 @@ nav{
     grid-template-areas: 
     'one one'
     'two three';
-    width: 500px;
     height: 650px;
+    row-gap: 20px;
+    column-gap: 15px;
 }
 .projects{
     align-items: normal;
-    margin-top: 150px;
+    justify-content: normal;
+    padding-top: 150px;
+    padding-left: 420px;
 }
 .third{
 
-    border:honeydew solid 2px;
+    border:honeydew solid 7px;
+    border:rgba(118, 105, 105, 0.515) solid 7px ;
+    /* box-shadow:inset 0 0 10px rgb(248, 100, 2),
+    inset 0 0 20px rgb(248, 100, 2),
+    inset 0 0 40px rgb(248, 100, 2),
+    0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 50px rgb(248, 100, 2) */
+    /* border-radius: 40px */
 }
 .p1{
-   
     grid-area: one;
-
+    width: 700px;
 }
 .p2 {
     grid-area: two;
+
 }
 .p3 {
     grid-area: three;
 } 
-  
+
+.p1:hover, .p2:hover, .p3:hover{
+    animation: anotherGlow .3s ease forwards;
+}
+/* frame animations */
+@keyframes anotherGlow {
+    0%{
+        border:rgba(118, 105, 105, 0.515) solid 7px ;
+        text-shadow: none;
+    }   
+    100%{
+        border:honeydew solid 7px;
+        box-shadow:inset 0 0 10px rgb(248, 100, 2),
+        inset 0 0 20px rgb(248, 100, 2),
+        inset 0 0 40px rgb(248, 100, 2),
+        0 0 20px rgb(248, 100, 2),
+        0 0 40px rgb(248, 100, 2),
+         0 0 50px rgb(248, 100, 2)
+    } 
+}
 /* scoll bar */
 .scroll-path{
     display: flex;
