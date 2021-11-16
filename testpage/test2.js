@@ -324,18 +324,29 @@ var skillEl = document.querySelector('.second');
 var projectEl1 = document.querySelector('.p1');
 var projectEl2 = document.querySelector('.p2');
 var projectEl3 = document.querySelector('.p3');
+var cardA = document.querySelector('.cardA');
+var cardB = document.querySelector('.cardB')
+var cardC = document.querySelector('.cardC')
+var topPic = document.querySelector('.top')
+var bottomPic1 = document.querySelector('.bottom');
+var bottomPic2 = document.querySelector('.bottom2');
+var skillText = document.querySelector('.texty');
 
 function bnaSkills(){
-    console.log('woah')
+    skillText.classList.add('towhite')
+    skillEl.classList.add('towhite')
 }
 function bnaP1(){
-    console.log('woah')
+    cardA.classList.add('glowee');
+    topPic.classList.add('brighter');
 }
 function bnaP2(){
-    console.log('woah')
+    cardB.classList.add('glowee');
+    bottomPic1.classList.add('brighter');
 }
 function bnaP3(){
-    console.log('woah')
+    cardC.classList.add('glowee');
+    bottomPic2.classList.add('brighter');
 }
 
 skillEl.addEventListener('mouseenter',bnaSkills)
