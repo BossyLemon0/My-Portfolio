@@ -13,11 +13,22 @@ var btn_exit = document.querySelector(".exit");
 var swipe_page = document.querySelector(".swipe_page");
 var abtMeBtn = document.querySelector(".four");
 var scrollPathvisibility = document.querySelector(".scroll-path");
+var allsects = document.querySelector('.info-sects');
+// var images = document.querySelector('.images');
+var topPic = document.querySelector('.top')
+var bottomPic1 = document.querySelector('.bottom');
+var bottomPic2 = document.querySelector('.bottom2');
+console.log(topPic,bottomPic1 ,bottomPic2 )
 
 function home(){
     swipe_page.classList.remove('swipe');
     setTimeout(()=>{
-        scrollPathvisibility.classList.remove('scrollerbehind');
+        scrollPathvisibility.classList.remove('scrollerbehind')
+        allsects.classList.remove('scrollerbehind')
+        topPic.classList.remove('scrollerbehind')
+        bottomPic1.classList.remove('scrollerbehind')
+        bottomPic2.classList.remove('scrollerbehind')
+        // images.classList.remove('scrollerbehind');
     },900)
 
 }
@@ -25,11 +36,52 @@ function home(){
 function swipe(){
     swipe_page.classList.add('swipe');
     scrollPathvisibility.classList.add('scrollerbehind');
+    console.log(homeIntroSlide);
+    allsects.classList.add('scrollerbehind');
+    topPic.classList.add('scrollerbehind')
+    bottomPic1.classList.add('scrollerbehind')
+    bottomPic2.classList.add('scrollerbehind')
+    // images.classList.add('scrollerbehind')
 }
 
 btn_exit.addEventListener("click", home);
 abtMeBtn.addEventListener("click", swipe);
-
+                                                                            // picture links
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+function topPageRedirect(){
+    // location.replace("https://dnd-dm-character-tracker.herokuapp.com/")
+    window.open("https://dnd-dm-character-tracker.herokuapp.com/", '_blank');
+}
+function bottomPage1Redirect(){
+    window.open("https://bossylemon0.github.io/Weatherboard/", '_blank');
+}
+function bottomPage2Redirect(){
+    window.open("https://stormy-basin-51525.herokuapp.com/", '_blank');
+}
+topPic.addEventListener('click', topPageRedirect)
+bottomPic1.addEventListener('click', bottomPage1Redirect)
+bottomPic2.addEventListener('click', bottomPage2Redirect)
+                                                                            // picture links
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+var insta = document.querySelector('.bi-instagram2')
+var linkedIn = document.querySelector('.bi-linkedin2')
+var gitHub = document.querySelector('.bi-github2')
+console.log(insta)
+function instagram(){
+    // location.replace("https://dnd-dm-character-tracker.herokuapp.com/")
+    window.open("https://www.instagram.com/_om.ir_/?hl=en", '_blank');
+    console.log('working')
+}
+function linkedin(){
+    window.open("https://www.linkedin.com/in/omar-ramirez-bb5372214/", '_blank');
+}
+function github(){
+    window.open("https://github.com/BossyLemon0", '_blank');
+    console.log('working')
+}
+insta.addEventListener('click', instagram)
+linkedIn.addEventListener('click', linkedin)
+gitHub.addEventListener('click', github)
                                                                             // nav bar button delegation
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -327,9 +379,7 @@ var projectEl3 = document.querySelector('.p3');
 var cardA = document.querySelector('.cardA');
 var cardB = document.querySelector('.cardB')
 var cardC = document.querySelector('.cardC')
-var topPic = document.querySelector('.top')
-var bottomPic1 = document.querySelector('.bottom');
-var bottomPic2 = document.querySelector('.bottom2');
+
 var skillText = document.querySelector('.texty');
 
 function bnaSkills(){
