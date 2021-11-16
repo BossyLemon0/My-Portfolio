@@ -14,7 +14,7 @@
 
 ## Description
 
-This is my portfolio website for my personal brand. T
+This project is my portfolio website for my personal brand. I plan to integrate a user login section and finish the about me page. For now please enjoy my website!
 
 ## Installation
 No installation required.
