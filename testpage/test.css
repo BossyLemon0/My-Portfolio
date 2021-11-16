@@ -546,13 +546,27 @@ header{
 
 @media (max-width: 480px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
-    .nav{
-        width: 2rem;
+    nav{
+        width:330px;
+    }
+    .logo{
+        padding: 0 0 0 25px
+    }
+    .info{
+        width: 200px;
+        padding: 0;
+    }
+    .btn{
+        width: 50px;
+        font-size: 10px;
     }
     .first{
         font-size: 40px;
+    }
+    .footer{
+        width: 325px;
     }
 }
  
