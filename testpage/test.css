@@ -565,6 +565,35 @@ header{
     .first{
         font-size: 40px;
     }
+    .skills{
+        width: auto;
+    }
+
+    .projects{
+        width: 100%;
+        }
+/* top card */
+
+    .grid{
+        display: block;
+        width: 100%;
+    }
+    .p1{
+        width: 100%;
+    }
+    .cardA{
+        width: 100%;
+    }
+    .pic1{
+        width: 100%;
+    }
+    /* bottom cards */
+    .cardB{
+        width: 100%;
+    }
+    .p3{
+
+    }
     .footer{
         width: 325px;
     }
