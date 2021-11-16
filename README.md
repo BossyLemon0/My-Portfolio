@@ -23,7 +23,9 @@ No installation required.
 
 Feel free to contact me through the given social media or take a look at my previous projects.
 
-![employee table working](./pictures/Insomnia_working.png)
+![Home Page](./testpage/images/Home_Page.png)
+
+[Deployed Portfolio](https://bossylemon0.github.io/My-Portfolio/)
 
 
 ## Contribution Guidelines
