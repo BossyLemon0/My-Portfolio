@@ -580,30 +580,58 @@ header{
     .projects{
         width: 100%;
         }
-/* top card */
-
     .grid{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 110%;
         width: 100%;
     }
+    .pic_text{
+        font-size: 9px;
+    }
+    /* top card */
     .p1{
         width: 100%;
+        height: 27%;
     }
     .cardA{
         width: 100%;
+        height: 100%;
+        margin-top: 0%;
     }
     .pic1{
         width: 100%;
+        height: 80%;
     }
 /* bottom cards */
+    .p2{
+        height: 27%;
+    }
     .cardB{
         width: 100%;
+        height: 100%;
+        margin-top: 0%;
+    }
+    .pic2{
+        width: 100%;
+        height: 80%;
     }
     .p3{
-
+    height: 27%;
     }
+    .cardC{
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+    }
+    .pic3{
+        width: 100%;
+        height: 80%;
+    }
+
+/* footer */
     .footer{
-        width: 325px;
+        width: 89%;
     }
 }
  
