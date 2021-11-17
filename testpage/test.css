@@ -624,6 +624,6 @@ header{
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
     body {
-        background-color: white;
+        /* background-color: white; */
     }
 }
