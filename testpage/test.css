@@ -549,6 +549,7 @@ header{
         /* background-color: red; */
         margin: 0;
     }
+/* nav */
     nav{
         width:100%;
     }
@@ -563,6 +564,12 @@ header{
         width: 50px;
         font-size: 10px;
     }
+/* scroll btns */
+.scroll-path{
+    right:5%;
+    top:37%;
+}
+/* main slides */
     .first{
         font-size: 40px;
     }
@@ -588,7 +595,7 @@ header{
     .pic1{
         width: 100%;
     }
-    /* bottom cards */
+/* bottom cards */
     .cardB{
         width: 100%;
     }
